@@ -1,7 +1,7 @@
 import SockJS from 'sockjs-client';
 import Stomp from 'stompjs/lib/stomp';
 
-const socket = new SockJS('http://localhost:8000/chat');
+const socket = new SockJS(`//${location.host}/chat`);
 const stompClient = window.Stomp.over(socket);
 export { stompClient as client };
 
