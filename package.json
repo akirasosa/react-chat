@@ -5,9 +5,9 @@
   "license": "BSD-3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akirasosa/react-isomorphic-chat"
+    "url": "https://github.com/akirasosa/react-chat"
   },
-  "homepage": "https://github.com/akirasosa/react-isomorphic-chat",
+  "homepage": "https://github.com/akirasosa/react-chat",
   "keywords": [
     "react",
     "starter",
