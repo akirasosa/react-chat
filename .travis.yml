@@ -3,19 +3,13 @@ cache:
   directories:
   - node_modules
 node_js:
-- '0.10'
+- '0.12.3'
 env:
   global:
-  - GH_REF: github.com/akirasosa/react-isomorphic-chat
+  - GH_REF: github.com/akirasosa/react-chat
   # GH_TOKEN
   - secure: qHG1Uj3aZErFNxgwuXsp8HzHLnGEmtcMoyzMH02ooXLgXE7oevTQBy5fnZFMaR8n6VmllybWCrTI5lm9+DtiIstoSnSGioOF1DbH+pM9p2NYICGG7PmbO5pC6x0+5ZpeBjIEBErhSq5wXfOLOScHvM8vWLS000uCllHkBbjXIyLHJEHmoPeIkCi7l1iV1XPb3Hrc8Kc5MnopwmvV0KN9MSR0eTlk6eNTt88i+ofITQ6b3BnYWRJ/+cR6gblFPz4lozFuNIxcMd3Xuyl7qzzWndE6oerP9k5UBMMxvBVrJFw2uezj6u1LgH4WDgBIbeA5moIDmvhQNGoSLpKnRka/136TBqVqlfZ+XZsacLaR5QMERNFN9aIjDK3ohPnypIIptV4NQz6d1lv/14+mZNTOWJwgGy8NAbJ3QWiM7ze5+w1yFhhio8c5zEUk5C8cUTLF3SE/qu5q6+4bDnC1jb2ZNstrBsb/pzMssQ52rkQa1HzAb2EVZbpYOfcjftEKbMWZy/R1TXUwMtfVWOBkpm0ZqU5awOIW2TgjbHTLdYBDOXm5YdTOHwQ0lRkG1qwTS4o4i6hHYv2ipedyGbROxjcAfq/G7NcDkuDzmo3ExbXUBZ02tiHUrX3IwhSjSlRiqzS809MahCvBdNQ2ppcM3R9WgJT+UszTCb53wb/gsPY+trg=
 script:
 - echo 1
 after_success:
 - scripts/push-to-ghpages.sh
-deploy:
-  provider: heroku
-  api_key:
-    secure: D9lKUilMR/wAGYzosl1e3IeTSIZ3hCjo3bu5JlooRyBpZ5qffAvWoiiRKNgv9dX/BdHxBnjGgZRdj6itGvz4eHSGLyRP8Yg1q7MZLuxznliuNZOxVpyLcGpdojdwuW0tFL4tmTGAIYG3jEX4CVdydnG/5+Xu7MuLtYRXQm4iZGUpWH8vE7O6eHKxBRtrhoWNOfTODTSs69fMaKSfrk5PFGC7tyMcHq265aIeZyjWRwa3Wqg4M03z8/qScBV17VTWEt1Gzdv1BVgFUtNvpS7KR4JzHWg7HOFpwd5O+hQ5dUplUhIgFlkeRnlu1FdOsquigQqKB58p6Xr51Qw/BF/3PnAD8r3lald8Nu26CECZOtE5JY953EfUEEdS9U+ZnjjoGPus3s3+byapq/nGywanVyyYdg0+s1kc4U7l8umciGQ0+s3LRcLuuTDcFkyHFLyBmcYSo0OOsvWCW12YTwmUC3wXHpRGl+4OeU5IKowD97mmUysKg2k7DOlSzKpwkOxzfgb8kiy6dg8xrAaQroOEbDVsT4fEoWJsxjaSLiiJRtbuVOge1L4Do+EwXmB1beEu1vGwRfJSDYCif/rYLcNOktiSnhJF5YRq3kScv7gzCdZHF1kaTLrJVR5gs6nKtFqJrT3XjaWTrWtb9kh7yaQVECOZG6fzOz58Fwsh47XAwCI=
-  app:
-    master: react-isomorphic-chat
