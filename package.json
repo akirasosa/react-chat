@@ -1,0 +1,40 @@
+{
+  "name": "react-chat",
+  "description": "React chat.",
+  "version": "1.0.0",
+  "license": "BSD-3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akirasosa/react-isomorphic-chat"
+  },
+  "homepage": "https://github.com/akirasosa/react-isomorphic-chat",
+  "keywords": [
+    "react",
+    "starter",
+    "boilerplate",
+    "template",
+    "webpack",
+    "flummox"
+  ],
+  "scripts": {
+    "build": "node ./node_modules/webpack/bin/webpack.js --verbose --colors --display-error-details --config webpack.config.js",
+    "watch": "node ./node_modules/webpack/bin/webpack.js --verbose --colors --display-error-details --config webpack.client-watch.js && node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.client-watch.js"
+  },
+  "devDependencies": {
+    "babel-core": "5.2.10",
+    "babel-loader": "5.0.0",
+    "babel-runtime": "5.2.10",
+    "flummox": "^4.0.0-alpha2",
+    "immutable": "^3.7.2",
+    "json-loader": "0.5.1",
+    "react-hot-loader": "1.2.6",
+    "react-router": "0.13.3",
+    "sockjs-client": "^1.0.0",
+    "stompjs": "^2.3.3",
+    "webpack": "1.8.11",
+    "webpack-dev-server": "1.8.2"
+  },
+  "engines": {
+    "node": ">=0.10.32"
+  }
+}
